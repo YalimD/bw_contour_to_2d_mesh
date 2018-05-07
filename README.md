@@ -14,4 +14,4 @@ Requires: (On Python 3.6)
 |![inputImage](test_images/worst.png "Input Image in OpenCV")|![blenderResult](obj_files/worst_result.png "Output .obj Mesh in Blender")|
 |![inputImage](test_images/real_area.png "Input Image in OpenCV")|![blenderResult](obj_files/real_area_result.png "Output .obj Mesh in Blender")|
 
-* Note that the last image has been dilated/eroted in order to make the mesh more connected.
+> Note that the last image has been dilated/eroted in order to make the mesh more connected.
