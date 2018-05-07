@@ -158,11 +158,12 @@ if __name__ == "__main__":
         mesh.add_face([openvertices[triangle] for triangle in triangles])
 
     import os
+    import ntpath
 
     if not os.path.exists("obj_files"):
         os.makedirs("obj_files")
 
-    openmesh.write_mesh('obj_files/result.obj', mesh)
+    openmesh.write_mesh('obj_files/' + ntpath.basename(args.image).split(".")[0] + ".obj", mesh)
 
     plt.show()
 
