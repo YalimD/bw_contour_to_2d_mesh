@@ -6,7 +6,7 @@ import numpy as np
 import triangle.plot
 
 '''
-Mesh generation from binary images by Yalım Doğan
+Mesh generation from binary images by Yalım Doğan.
 
 This program reads the given image to detect its contours and using its hierarchy to
 generate corresponding mesh which can contain multiple polygons and holes.
