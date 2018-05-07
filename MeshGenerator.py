@@ -19,14 +19,6 @@ Program uses the following Python libraries:
 
 '''
 
-
-# Hierarchy info: [next,previous,firsCh, parent] (next and prev are for the same hierarchy level)
-# Starting from the first contour, (initial call)
-#   if level is odd:
-#       get children (if any)
-#       draw the ABSOLUTE area of the contour
-#       hole = use shapely to find an arbitrary point inside
-#   return hole + recursive(level+1)
 #This method searches for holes inside contours, by exposing their parent-child relationship.
 #Rule is: If number of parents is odd, the polygon with this contour as its boundary has a hole
 #The above rules holds for 1px wide polygons, as opencv returns 1 internal and 1 external contours in that case
